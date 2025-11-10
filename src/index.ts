@@ -30,7 +30,16 @@ export type {
 } from "./core/types.js";
 
 // Network exports
-export { networks, getNetworkConfig, CELO_MAINNET, CELO_SEPOLIA } from "./networks/index.js";
+export {
+  networks,
+  getNetworkConfig,
+  CELO_MAINNET,
+  CELO_SEPOLIA,
+  ARBITRUM_ONE,
+  AVALANCHE_C_CHAIN,
+  BASE_MAINNET,
+  ETHEREUM_MAINNET
+} from "./networks/index.js";
 export type { NetworkConfig } from "./networks/types.js";
 
 // Wallet exports

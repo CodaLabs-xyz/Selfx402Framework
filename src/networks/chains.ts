@@ -1,9 +1,10 @@
 /**
- * Viem chain definitions for Celo networks
+ * Viem chain definitions for EIP-3009 compatible networks
  * Used for wallet client creation
  */
 
 import { defineChain } from "viem";
+import { arbitrum, avalanche, base, mainnet } from "viem/chains";
 
 export const celo = defineChain({
   id: 42220,
@@ -48,7 +49,17 @@ export function getViemChain(chainId: number) {
       return celo;
     case 11142220:
       return celoSepolia;
+    case 42161:
+      return arbitrum;
+    case 43114:
+      return avalanche;
+    case 8453:
+      return base;
+    case 1:
+      return mainnet;
     default:
-      throw new Error(`Unsupported chain ID: ${chainId}`);
+      throw new Error(
+        `Unsupported chain ID: ${chainId}. Supported: 1 (Ethereum), 8453 (Base), 42161 (Arbitrum), 42220 (Celo), 43114 (Avalanche), 11142220 (Celo Sepolia)`
+      );
   }
 }

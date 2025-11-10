@@ -840,25 +840,57 @@ function createVoucherDomain(
 
 ## 🌐 Network Support
 
+All networks support EIP-3009 USDC for gasless transfers.
+
+### Ethereum Mainnet (Chain ID: 1) ✅
+
+- **RPC**: `https://eth.llamarpc.com`
+- **USDC Contract**: `0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48`
+- **Explorer**: https://etherscan.io
+- **EIP-3009**: ✅ Native Circle USDC
+
+### Base Mainnet (Chain ID: 8453) ✅
+
+- **RPC**: `https://mainnet.base.org`
+- **USDC Contract**: `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`
+- **Explorer**: https://basescan.org
+- **EIP-3009**: ✅ Native Circle USDC
+
+### Arbitrum One (Chain ID: 42161) ✅
+
+- **RPC**: `https://arb1.arbitrum.io/rpc`
+- **USDC Contract**: `0xaf88d065e77c8cC2239327C5EDb3A432268e5831`
+- **Explorer**: https://arbiscan.io
+- **EIP-3009**: ✅ Native Circle USDC
+
 ### Celo Mainnet (Chain ID: 42220) ✅
 
 - **RPC**: `https://forno.celo.org`
 - **USDC Contract**: `0xcebA9300f2b948710d2653dD7B07f33A8B32118C`
 - **Explorer**: https://celoscan.io
 - **Self Protocol**: `0xe57F4773bd9c9d8b6Cd70431117d353298B9f5BF`
+- **EIP-3009**: ✅ Confirmed and tested
+
+### Avalanche C-Chain (Chain ID: 43114) ✅
+
+- **RPC**: `https://api.avax.network/ext/bc/C/rpc`
+- **USDC Contract**: `0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E`
+- **Explorer**: https://snowtrace.io
+- **EIP-3009**: ✅ Native Circle USDC
 
 ### Celo Sepolia (Chain ID: 11142220) ✅
 
 - **RPC**: `https://celo-sepolia.g.alchemy.com/v2/demo`
 - **USDC Contract**: `0x01C5C0122039549AD1493B8220cABEdD739BC44E`
 - **Explorer**: https://celo-sepolia.blockscout.com
+- **EIP-3009**: ✅ Testnet
 
-**Why Celo?**
-- ✅ EIP-3009 USDC support (gasless transfers)
-- ✅ Low fees (<$0.01 per transaction)
-- ✅ Fast blocks (5 seconds)
-- ✅ Mobile-first ecosystem
-- ✅ Self Protocol mainnet deployment
+**Why these networks?**
+- ✅ All have native Circle USDC with EIP-3009 support
+- ✅ Gasless transfers (payer signs, facilitator executes)
+- ✅ Low transaction fees
+- ✅ Fast block times
+- ✅ Production-ready infrastructure
 
 ---
 
@@ -952,7 +984,7 @@ npm version patch|minor|major
 npm publish
 ```
 
-**Current Version**: 1.0.1
+**Current Version**: 1.1.0
 
 ---
 

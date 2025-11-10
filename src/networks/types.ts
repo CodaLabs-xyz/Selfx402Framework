@@ -28,4 +28,18 @@ export interface NetworkConfig {
   isTestnet: boolean;
 }
 
-export type SupportedNetwork = "celo" | "celo-sepolia";
+export type SupportedNetwork =
+  | "celo"
+  | "celo-mainnet"
+  | "celo-sepolia"
+  | "celo-testnet"
+  | "arbitrum"
+  | "arbitrum-one"
+  | "avalanche"
+  | "avalanche-c-chain"
+  | "avax"
+  | "base"
+  | "base-mainnet"
+  | "ethereum"
+  | "ethereum-mainnet"
+  | "eth";

@@ -1,31 +1,22 @@
-# Source files (only ship compiled dist/)
+# Development files
 src/
 tsconfig.json
-*.ts
-!*.d.ts
+examples/
+.gitignore
+.git/
 
-# Development files
-node_modules/
-.env
-.env.*
-*.log
-
-# Build artifacts
-*.tsbuildinfo
-
-# Tests
-test/
+# Test files
 tests/
 *.test.ts
 *.spec.ts
 
-# Documentation (except README.md)
+# Documentation (keep README.md, CHANGELOG.md, MIGRATION.md, NETWORKS.md)
 docs/
-examples/
 
-# Git
-.git/
-.gitignore
+# Build artifacts
+node_modules/
+*.log
+npm-debug.log*
 
 # IDE
 .vscode/
@@ -36,6 +27,3 @@ examples/
 # OS
 .DS_Store
 Thumbs.db
-
-# SQL migration files (not needed in npm package)
-*.sql
